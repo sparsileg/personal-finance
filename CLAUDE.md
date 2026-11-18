@@ -3,7 +3,7 @@
 ## Course guidelines
 
 - The course format: 4 weekly sessions plus an optional 5th, each with teaching, then hands-on worksheets, then homework.
-- Session length: about one hour of core content, up to about an hour and fifteen minutes including the lead-in and discussion after class. Plan activities to fit this time.
+- Session length: about 90 minutes in total, including the opening inspiration, buddy check-in, and closing. Plan activities to fit this time.
 - Each session opens with an inspirational message tied loosely to that week's topic.
 - The buddy system: members pair up in class, stay in touch during the week for support and accountability, and can switch buddies each week. Each session should include a short buddy check-in and a buddy commitment for the coming week.
 - The tone: positive and free of shame, grateful for what they already have, and encouraging them to give back to their community, church and friends.
