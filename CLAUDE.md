@@ -21,3 +21,13 @@ Course materials are Word documents, numbered by session:
 All five sessions use this format.
 
 Sessions: 1 Understanding Your Money Story, 2 Creating a Budget, 3 Breaking the Debt Cycle, 4 Financial Safety Net, 5 Building Wealth (the optional session).
+
+## Building the documents
+
+The session documents (Sessions 1–5) are generated from Python scripts in `build/`, using python-docx:
+
+- `sN.py` makes the session guide, `fN.py` the facilitator notes, and `tN.py` the take-home worksheets. `pflib.py` holds the shared layout helpers, and `template.docx` supplies the styles.
+- `build/build.sh` builds all 15 documents into `build/out/`, and `build/build.sh --install` copies them over the files in the repo root.
+- `build/render.sh NAME SCRIPT` builds one document and makes a PDF with page previews, to check where pages break.
+
+Make content changes in the scripts, then rebuild and install. Edits made directly in Word are overwritten by the next install. `0 - Overview.docx` is not generated.
