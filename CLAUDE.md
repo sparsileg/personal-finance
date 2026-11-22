@@ -13,7 +13,7 @@
 
 Course materials are Word documents, numbered by session:
 
-- `0 - Overview.docx`: summary of all sessions
+- `0 - Overview.docx`: the course at a glance: audience, goals, how sessions work, the materials, and a summary of each session
 - `N - <Topic>.docx`: the session guide for session N, read by the facilitator and participants together. It includes 2–4 "Read Aloud" boxes, discussion questions, and minutes for each part (about 75 planned minutes, leaving slack in the 90). The in-class worksheet, the homework sheet and a notes page follow the guide text, each starting at the top of a page so they can be printed separately.
 - `N - Facilitator Notes.docx`: at most two pages for the person leading session N: goals, their role (a council facilitator, not a teacher), how to prepare, timing and what to cut, and handling emotions and issues
 - `N - Take-Home Worksheets.docx`: optional extra worksheets for home, each starting on a new page
@@ -24,10 +24,10 @@ Sessions: 1 Understanding Your Money Story, 2 Creating a Budget, 3 Breaking the 
 
 ## Building the documents
 
-The session documents (Sessions 1–5) are generated from Python scripts in `build/`, using python-docx:
+The overview and the session documents are generated from Python scripts in `build/`, using python-docx:
 
-- `sN.py` makes the session guide, `fN.py` the facilitator notes, and `tN.py` the take-home worksheets. `pflib.py` holds the shared layout helpers, and `template.docx` supplies the styles.
-- `build/build.sh` builds all 15 documents into `build/out/`, and `build/build.sh --install` copies them over the files in the repo root.
+- `o0.py` makes the overview. `sN.py` makes the session guide, `fN.py` the facilitator notes, and `tN.py` the take-home worksheets. `pflib.py` holds the shared layout helpers, and `template.docx` supplies the styles.
+- `build/build.sh` builds all 16 documents into `build/out/`, and `build/build.sh --install` copies them over the files in the repo root.
 - `build/render.sh NAME SCRIPT` builds one document and makes a PDF with page previews, to check where pages break.
 
-Make content changes in the scripts, then rebuild and install. Edits made directly in Word are overwritten by the next install. `0 - Overview.docx` is not generated.
+Make content changes in the scripts, then rebuild and install. Edits made directly in Word are overwritten by the next install.

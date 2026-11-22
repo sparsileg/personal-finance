@@ -30,10 +30,6 @@ def guide():
         "“If there is any one thing that will bring peace and contentment into the human heart, "
         "and into the family, it is to live within our means.” (Heber J. Grant, quoted by "
         "N. Eldon Tanner, “Constancy amid Change,” October 1979 general conference)",
-        "“… the principles of provident living: joyfully living within our means, being content "
-        "with what we have, avoiding excessive debt, and diligently saving and preparing for "
-        "rainy-day emergencies.” (Robert D. Hales, “Becoming Provident Providers Temporally and "
-        "Spiritually,” April 2009 general conference)",
     ])
     d.discuss(["What does a prosperous life mean to you, apart from money?"])
 

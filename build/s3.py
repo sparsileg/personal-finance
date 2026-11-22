@@ -61,14 +61,15 @@ def guide():
         "person. Most of the time, life cost more than you had, and you did what you had to do.",
         "Most debt also has **interest**. Interest is a fee for borrowing. It is added every "
         "month until you pay the debt off. Here is what happens with $3,000 on a credit card "
-        "at 18% interest:",
+        "at 22% interest:",
     ], title="How Interest Works Against You")
     d.grid(["If you pay each month", "Time to pay it off", "Total you pay", "Interest alone"], [
-        ["$60", "7 years, 10 months", "about $5,590", "about $2,590"],
-        ["$120", "2 years, 8 months", "about $3,790", "about $790"],
+        ["$75", "6 years, 1 month", "about $5,460", "about $2,460"],
+        ["$150", "2 years, 2 months", "about $3,770", "about $770"],
     ], [1.9, 1.6, 1.5, 1.5], height=0.3, size=11)
-    d.p("Paying $60 more each month saves more than five years and about $1,800. Even an extra "
-        "$10 or $20 helps. Payday loans, title loans, and rent-to-own often cost far more than "
+    d.p("Paying $75 more each month saves almost four years and about $1,690. Even an extra "
+        "$10 or $20 helps. Paying only the minimum takes even longer, because the minimum "
+        "shrinks as you pay the balance down. Payday loans, title loans, and rent-to-own often cost far more than "
         "a credit card, so they are worth paying off first or avoiding when you can.")
     d.discuss([
         "What surprises you about these numbers?",
