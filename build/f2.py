@@ -33,7 +33,8 @@ def build():
     d.h2("How to prepare")
     d.bullets([
         "Fill out My Real Life Budget yourself, or for a made-up family with a low or irregular "
-        "income, so you can show an example on the flipchart.",
+        "income, so you can show an example on the flipchart. Its second side ends with the "
+        "principle and a first step. People can finish it at home, but read the principle aloud before moving on.",
         "Bring the **local resource list** again, plus spare copies of the Session 1 tracker for "
         "anyone who didn’t bring theirs.",
         "Bring guides, pens, calculators (phones work too), and a flipchart or whiteboard.",

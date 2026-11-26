@@ -33,7 +33,8 @@ def build():
 
     d.h2("How to prepare")
     d.bullets([
-        "Fill out My Debt Plan yourself, or for a made-up person, so you can show an example.",
+        "Fill out My Debt Plan, front and back, yourself or for a made-up person. The back, "
+        "**Seeing the Finish Line**, ends with the principle and a first step. People can finish it at home, but read the principle aloud before moving on.",
         "Find the nearest **nonprofit credit counseling** agency (members of the National "
         "Foundation for Credit Counseling, nfcc.org) and add it to your resource list, along "
         "with any local free legal aid.",

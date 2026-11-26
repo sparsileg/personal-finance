@@ -34,7 +34,9 @@ def build():
 
     d.h2("How to prepare")
     d.bullets([
-        "Read the guide and practice explaining the $25-a-month table in your own words.",
+        "Read the guide and practice explaining the $25-a-month table in your own words. Fill out "
+        "My Next Steps Plan, front and back. The back, **Keeping It Going**, ends with the "
+        "principle. People can finish it at home, but read the principle aloud before moving on.",
         "Find the nearest free tax help site (VITA) and add it to the resource list.",
         "Bring guides, pens, the resource list, and, if you like, simple certificates of "
         "completion with each person’s name.",

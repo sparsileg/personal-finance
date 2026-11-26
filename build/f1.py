@@ -34,7 +34,9 @@ def build():
 
     d.h2("How to prepare")
     d.bullets([
-        "Read the whole guide and fill out the Snapshot yourself, so you know where people get stuck.",
+        "Read the whole guide and fill out the Snapshot, front and back, yourself, so you know "
+        "where people get stuck. The back, **What My Snapshot Tells Me**, ends with the principle "
+        "and a first step. People can finish it at home, but read the principle aloud before moving on.",
         "Make a **local resource list** to hand out: 211, food pantries, SNAP and WIC offices, "
         "utility and rent assistance, free tax help, and nonprofit credit counseling.",
         "Bring a guide for each person, pens, name tags, a flipchart or whiteboard, a few "

@@ -32,7 +32,9 @@ def build():
 
     d.h2("How to prepare")
     d.bullets([
-        "Fill out My Safety Net Plan yourself, or for a made-up person on a tight income.",
+        "Fill out My Safety Net Plan, front and back, yourself or for a made-up person on a tight "
+        "income. The back, **Putting My Safety Net to Work**, ends with the principle and a "
+        "first step. People can finish it at home, but read the principle aloud before moving on.",
         "Update the **local resource list**: 211, food pantries, utility and rent help, Medicaid "
         "and CHIP offices, free tax help (VITA), and credit unions or banks with low-cost "
         "accounts.",
