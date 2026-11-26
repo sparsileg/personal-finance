@@ -84,7 +84,8 @@ def build():
         "late start, a break, and good conversation.",
         "**A council, not a class.** There is no teacher or expert. A facilitator keeps time and "
         "invites every voice. The group reads the session guide together, and volunteers read "
-        "the Read Aloud boxes. Reading aloud is always optional.",
+        "the Read Aloud boxes. Reading aloud is always optional. The guide also works for "
+        "someone reading on their own, such as a member who missed a session.",
         "**The same pattern each week.** An opening thought, a buddy check-in, a few key ideas, "
         "a hands-on worksheet with real numbers, discussion, and a wrap-up with a commitment, "
         "a moment of gratitude, and a closing circle.",
@@ -103,7 +104,7 @@ def build():
         ["Session guide, such as “3 - Breaking the Debt Cycle”", "Everyone",
          "The session plan with minutes for each part, Read Aloud boxes, and discussion "
          "questions, followed by the in-class worksheet, the homework tracker, and a notes "
-         "page, each on its own page"],
+         "page, each starting on its own sheet of paper"],
         ["Facilitator Notes", "The facilitator",
          "Two pages: goals, the facilitator’s role, how to prepare, timing and what to "
          "shorten, and handling emotions and issues"],
@@ -116,7 +117,9 @@ def build():
         "Make a **local resource list**: 211, food pantries, utility and rent help, free tax help "
         "(VITA), a nonprofit credit counselor, and banks or credit unions with low-cost accounts. "
         "Bring copies every week.",
-        "Print a session guide for each person, and the facilitator notes for yourself.",
+        "Print a session guide for each person, and the facilitator notes for yourself. Print "
+        "double-sided: each worksheet starts on its own sheet (the files include a blank page "
+        "where needed), so worksheets can be pulled out or printed separately.",
         "Bring pens, calculators, and something to write on that the whole group can see.",
     ], size=S, after=1)
 

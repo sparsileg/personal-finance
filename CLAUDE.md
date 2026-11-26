@@ -14,9 +14,11 @@
 Course materials are Word documents, numbered by session:
 
 - `0 - Overview.docx`: the course at a glance: audience, goals, how sessions work, the materials, and a summary of each session
-- `N - <Topic>.docx`: the session guide for session N, read by the facilitator and participants together. It includes 2–4 "Read Aloud" boxes, discussion questions, and minutes for each part (about 75 planned minutes, leaving slack in the 90). The in-class worksheet, the homework sheet and a notes page follow the guide text, each starting at the top of a page so they can be printed separately.
+- `N - <Topic>.docx`: the session guide for session N, read by the facilitator and participants together. It works for the group in class or for someone reading alone, and includes 2–4 "Read Aloud" boxes, discussion questions, and minutes for each part (about 75 planned minutes, leaving slack in the 90). A notes page follows the guide text on a new page. Then come the in-class worksheet (front and back: the worksheet, then an exercise ending with "The principle" and "My first step this week") and the homework sheet.
 - `N - Facilitator Notes.docx`: at most two pages for the person leading session N: goals, their role (a council facilitator, not a teacher), how to prepare, timing and what to cut, and handling emotions and issues
-- `N - Take-Home Worksheets.docx`: optional extra worksheets for home, each starting on a new page
+- `N - Take-Home Worksheets.docx`: optional extra worksheets for home
+
+Everything is printed double-sided, so every worksheet (in-class, homework, take-home) starts on an odd page, beginning its own sheet; Word inserts a blank page where needed (`new_page_section` in `pflib.py`).
 
 All five sessions use this format.
 

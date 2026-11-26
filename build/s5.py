@@ -20,9 +20,9 @@ def guide():
         "Make a plan for your next steps after this course",
         "Plan how you and your buddy will keep encouraging each other",
     ])
-    d.p("As before, a volunteer reads each **Read Aloud** box, and reading is always optional. "
-        "Your worksheets are at the end of this guide. “Wealth” here doesn’t mean being rich. "
-        "It means having enough, with peace of mind, and room to help others.")
+    d.p("“Wealth” here doesn’t mean being rich. It means having enough, with peace of "
+        "mind, and room to help others.")
+    d.how_to_use("Have your budget, debt plan, and safety net plan ready to use.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
@@ -126,6 +126,15 @@ def guide():
     d.p("Finish this sentence: “I’m continuing my money journey by …” Then share one thing "
         "you’re grateful for from our time together.")
 
+    # Notes ---------------------------------------------------------------
+    d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
+    d.h1("Session 5 Notes")
+    d.note("Space for your thoughts during our discussions.")
+    for head in ["What a prosperous life means to me", "How small amounts grow",
+                 "Saving, investing, and staying safe", "Things I want to remember"]:
+        d.label(head, before=8)
+        d.lines(4)
+
     # Worksheet: next steps ----------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · My Next Steps Plan")
     d.h1("My Next Steps Plan")
@@ -155,6 +164,29 @@ def guide():
     d.label("Where to go with questions", before=6)
     d.p("☐ My buddy   ☐ 211   ☐ Free tax help (VITA)   ☐ A nonprofit credit counselor   "
         "☐ My job’s HR office   ☐ Other: ______________", size=10)
+    d.page_break()
+    d.h2("Keeping It Going")
+    d.note("The back of your plan. If time runs short in class, finish this at home.")
+    d.label("The habits I’ll keep (check all that apply)", before=4)
+    d.checks([
+        "Write down what I spend, at least for a few days each month",
+        "Make a budget before each month begins, and save something first",
+        "Put a little extra toward one debt at a time",
+        "Use my safety net only for real emergencies, and refill it",
+        "Check in with my buddy each month",
+        "Give some time, talents, or money to others",
+    ], size=10, after=1)
+    d.label("Passing it on", before=6)
+    d.p("Someone I’ll share one idea from this course with: ______________________________",
+        size=10, after=4)
+    d.p("The idea I’ll share: ______________________________________________________",
+        size=10, after=4)
+    d.p("One way I’ll give back this month (time, talents, or money): ____________________",
+        size=10, after=6)
+    d.label("A note to myself, to read in three months")
+    d.lines(3)
+    d.principle("Small, steady steps, kept up over time, add up. Start where you are, keep "
+                "going, and lift others along the way.")
 
     # Monthly check-in -----------------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Monthly Check-In")
@@ -181,14 +213,6 @@ def guide():
         "How can I encourage you before we talk next?",
     ], size=10, after=1)
 
-    # Notes ---------------------------------------------------------------
-    d.new_page_section(margins=0.6, footer=FOOT + " · Notes")
-    d.h1("Session 5 Notes")
-    d.note("Space for your thoughts during our discussions.")
-    for head in ["What a prosperous life means to me", "How small amounts grow",
-                 "Saving, investing, and staying safe", "Things I want to remember"]:
-        d.label(head, before=8)
-        d.lines(4)
     d.save(OUT)
 
 

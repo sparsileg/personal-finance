@@ -70,9 +70,11 @@ class Doc:
                 el.set(qn("w:fldCharType"), kind)
             r._r.append(el)
 
-    def new_page_section(self, margins=0.6, footer=None):
-        """Start a new section on a new page (worksheets start at the top of a page)."""
-        sec = self.d.add_section(WD_SECTION.NEW_PAGE)
+    def new_page_section(self, margins=0.6, footer=None, odd=True):
+        """Start a new section on a new page. With odd=True (worksheets), it starts on the next
+        odd (right-hand) page, so it begins its own sheet when printed double-sided; Word adds
+        a blank page when needed."""
+        sec = self.d.add_section(WD_SECTION.ODD_PAGE if odd else WD_SECTION.NEW_PAGE)
         _set_margins(sec, margins)
         sec.footer_distance = Inches(0.35)
         if footer:
@@ -291,6 +293,22 @@ class Doc:
         last.paragraph_format.space_after = Pt(2)
         self._space(self.d.add_paragraph(), after=0).paragraph_format.line_spacing = Pt(6)
         return t
+
+    def principle(self, text):
+        """The one idea an in-class worksheet teaches, in a shaded box."""
+        return self.box([f"**The principle:** {text}"], fill=BOX_FILL, size=11)
+
+    def how_to_use(self, bring):
+        """The same "how to use this guide" note at the start of every session guide."""
+        self.label("How to use this guide")
+        self.p("**In class,** we read this guide together. When we come to a **Read Aloud** box, a "
+               "volunteer reads it to the group. Reading aloud is always optional. The minutes in "
+               "each heading help us finish on time.")
+        self.p("**On your own** (if you missed a session, or want to review), read it straight "
+               "through. Think about the **Discuss** questions, or jot your answers on the Notes "
+               "page, and do the worksheet. Call your buddy or the facilitator to stay connected.")
+        self.p("The worksheets are at the end of this guide. Each one starts on its own sheet of "
+               "paper. " + bring)
 
     def box(self, paragraphs, fill="F2F2F2", size=10):
         t = self.d.add_table(rows=1, cols=1)

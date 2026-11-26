@@ -20,9 +20,8 @@ def guide():
         "Learn your rights with debt collectors, and how to ask for help",
         "Choose a buddy for the coming week",
     ])
-    d.p("As before, a volunteer reads each **Read Aloud** box, and reading is always optional. "
-        "Your worksheets are at the end of this guide. Have your budget from last week, and any "
-        "bills or statements for money you owe, ready to use.")
+    d.how_to_use("Have your budget from last week, and any bills or statements for money you "
+                 "owe, ready to use.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
@@ -151,6 +150,15 @@ def guide():
     d.p("**Next week:** We’ll build a safety net, a small cushion of savings so surprises don’t "
         "push us back into debt.")
 
+    # Notes ---------------------------------------------------------------
+    d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
+    d.h1("Session 3 Notes")
+    d.note("Space for your thoughts during our discussions.")
+    for head in ["How interest works against me", "My debt plan",
+                 "My rights, and who can help", "Things I want to remember"]:
+        d.label(head, before=8)
+        d.lines(4)
+
     # Worksheet: debt plan --------------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · My Debt Plan")
     d.h1("My Debt Plan")
@@ -184,6 +192,35 @@ def guide():
         "a lower payment or a payment plan. A nonprofit credit counselor can help too. "
         "Calling 211 can connect me with local help.",
     ])
+    d.page_break()
+    d.h2("Seeing the Finish Line")
+    d.note("The back of your debt plan. If time runs short in class, finish this at home.")
+    d.p("A rough way to see when a debt will be paid off: divide the balance by what you pay "
+        "each month. Interest adds a little more time, but you’ll see that there is an end.",
+        size=10, after=4)
+    d.box([
+        "**Example (the snowball, from the guide):** The store card is $300. Pay the $25 minimum "
+        "plus $25 extra, $50 a month: $300 ÷ $50 = about 6 months (a little more with interest).",
+        "Then **roll it**: the medical bill’s $20 minimum plus the $50 you were paying on the "
+        "store card makes $70 a month. By then the bill is down to about $480: $480 ÷ $70 = "
+        "about 7 more months. Each payoff makes the next one faster.",
+    ])
+    d.label("My debts, in the order I’ll pay them off", before=6)
+    d.grid(["Debt", "Balance", "Monthly payment", "Months to pay off (balance ÷ payment)"], [
+        ["1st: ", "$", "$", ""],
+        ["2nd: ", "$", "$", ""],
+        ["3rd: ", "$", "$", ""],
+    ], [2.2, 1.2, 1.4, 2.5], height=0.32)
+    d.p("For each new target, the monthly payment = its own minimum + everything you were "
+        "paying on the debt you just finished.", size=9, after=6)
+    d.p("About when my first debt will be paid off: ________________   I’ll tell: "
+        "________________", size=10, after=4)
+    d.p("When I’m tempted to borrow again, I will: ________________________________________",
+        size=10, after=6)
+    d.principle("Focus on one debt at a time, and roll each finished payment into the next. "
+                "Every payoff speeds up the next one. Avoid new debt while you do.")
+    d.label("My first step this week", before=8)
+    d.lines(2)
 
     # Homework: weekly tracker -----------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Weekly Debt Tracker")
@@ -210,14 +247,6 @@ def guide():
     d.question(2, "What got in the way, and what will I try next week?", 2, size=10)
     d.question(3, "What am I proud of this week?", 2, size=10)
 
-    # Notes ---------------------------------------------------------------
-    d.new_page_section(margins=0.6, footer=FOOT + " · Notes")
-    d.h1("Session 3 Notes")
-    d.note("Space for your thoughts during our discussions.")
-    for head in ["How interest works against me", "My debt plan",
-                 "My rights, and who can help", "Things I want to remember"]:
-        d.label(head, before=8)
-        d.lines(4)
     d.save(OUT)
 
 

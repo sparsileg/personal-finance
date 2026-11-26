@@ -9,7 +9,7 @@ PY=${PYTHON:-python3}
 mkdir -p out
 "$PY" "$2" "out/$1.docx"
 cd out && rm -f "$1".pdf "$1"-pg*.png "$1"-m*.png
-soffice --headless --convert-to pdf "$1.docx" >/dev/null 2>&1
+soffice --headless --convert-to 'pdf:writer_pdf_Export:{"IsSkipEmptyPages":{"type":"boolean","value":"false"}}' "$1.docx" >/dev/null 2>&1
 pdftoppm -r 60 -png "$1.pdf" "$1-pg"
 n=$(ls "$1"-pg*.png | wc -l); echo "$1: $n pages"
 ls "$1"-pg*.png | split -l 6 - "$1-grp-"

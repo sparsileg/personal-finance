@@ -19,9 +19,7 @@ def guide():
         "Learn about other safety nets: insurance, community help, and each other",
         "Choose a buddy for the coming week",
     ])
-    d.p("As before, a volunteer reads each **Read Aloud** box, and reading is always optional. "
-        "Your worksheets are at the end of this guide. Have your budget and your debt plan ready "
-        "to use.")
+    d.how_to_use("Have your budget and your debt plan ready to use.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
@@ -133,6 +131,15 @@ def guide():
     d.p("**Next week (optional session):** We’ll look at small, steady ways to build a secure "
         "future.")
 
+    # Notes ---------------------------------------------------------------
+    d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
+    d.h1("Session 4 Notes")
+    d.note("Space for your thoughts during our discussions.")
+    for head in ["Surprises I can plan for", "My safety net plan",
+                 "Other safety nets I want to look into", "Things I want to remember"]:
+        d.label(head, before=8)
+        d.lines(4)
+
     # Worksheet: safety net plan --------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · My Safety Net Plan")
     d.h1("My Safety Net Plan")
@@ -173,6 +180,34 @@ def guide():
         "vacations, gifts, and bills I forgot to budget for are not. When I use it, I start "
         "refilling it right away.",
     ])
+    d.page_break()
+    d.h2("Putting My Safety Net to Work")
+    d.note("The back of your safety net plan. If time runs short in class, finish this at home.")
+    d.label("1. How long to my first goal?", before=4)
+    d.p("My first goal $________ − what I have now $________ = $________ to go", size=10,
+        after=4)
+    d.p("$________ to go ÷ $________ a week = about ________ weeks", size=10, after=2)
+    d.p("Example: a $100 goal, with $10 saved now and $5 a week: $90 ÷ $5 = 18 weeks, about "
+        "four months. Saving a little more, or adding a gift or refund, gets you there sooner.",
+        size=9, italic=True, after=6)
+    d.label("2. Emergency or not? Use the three questions: unexpected, necessary, urgent.")
+    d.grid(["Situation", "Emergency", "Not an emergency"], [
+        ["The car you need to get to work breaks down", "☐", "☐"],
+        ["A big sale on a TV you’ve wanted", "☐", "☐"],
+        ["A child’s birthday next month", "☐", "☐"],
+        ["An urgent-care co-pay for a sick child", "☐", "☐"],
+        ["The rent, due on the 1st as usual", "☐", "☐"],
+        ["Your hours are cut at work this month", "☐", "☐"],
+    ], [4.5, 1.4, 1.4], height=0.3, size=10)
+    d.p("Answers: the car, the co-pay, and the cut hours are emergencies. The sale is a want, and "
+        "the birthday and rent are expected, so they belong in the budget.", size=9,
+        italic=True, after=6)
+    d.label("3. If I have to use my safety net, I’ll refill it by:")
+    d.lines(1)
+    d.principle("Save first, start small, and keep it for real emergencies. Even $100 set aside "
+                "turns many crises into inconveniences, and keeps you out of new debt.")
+    d.label("My first step this week", before=8)
+    d.lines(2)
 
     # Homework: weekly tracker -------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Weekly Safety Net Tracker")
@@ -200,14 +235,6 @@ def guide():
     d.question(2, "What will I try next week?", 1, size=10)
     d.question(3, "What am I proud of this week?", 1, size=10)
 
-    # Notes ---------------------------------------------------------------
-    d.new_page_section(margins=0.6, footer=FOOT + " · Notes")
-    d.h1("Session 4 Notes")
-    d.note("Space for your thoughts during our discussions.")
-    for head in ["Surprises I can plan for", "My safety net plan",
-                 "Other safety nets I want to look into", "Things I want to remember"]:
-        d.label(head, before=8)
-        d.lines(4)
     d.save(OUT)
 
 

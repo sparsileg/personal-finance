@@ -28,11 +28,7 @@ def guide():
         "Notice what leads you to spend",
         "Choose a buddy to support you this week",
     ])
-    d.label("How we use this guide")
-    d.p("We go through this guide together. When you come to a **Read Aloud** box, a volunteer "
-        "reads it to the group. You never have to read if you'd rather not. The times in each "
-        "heading help us finish on time. Your worksheets are at the end of this guide, and each "
-        "one starts on a new page.")
+    d.how_to_use("All you need is a pen.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
@@ -158,6 +154,15 @@ def guide():
     d.p("**Next week:** We’ll use what you learn from tracking to build a budget that fits "
         "your real life.", italic=False)
 
+    # Notes ---------------------------------------------------------------
+    d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
+    d.h1("Session 1 Notes")
+    d.note("Space for your thoughts during our discussions.")
+    for head in ["Money messages from growing up", "My money snapshot", "What leads me to spend",
+                 "Things I want to remember"]:
+        d.label(head, before=8)
+        d.lines(4)
+
     # Worksheet: snapshot ------------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · My Financial Snapshot")
     d.h1("My Financial Snapshot")
@@ -186,6 +191,9 @@ def guide():
            [["$", "− $", "= $"]], [2.43, 2.43, 2.44], height=0.34)
     d.p("If what’s left is less than zero, you’re not alone, and it isn’t a failure. "
         "It’s a starting point, and that is exactly what this course is for.", size=10)
+    d.page_break()
+    d.h2("What My Snapshot Tells Me")
+    d.note("The back of your snapshot. If time runs short in class, finish this at home.")
     d.label("Quick check (mark one for each)", before=6)
     d.p("1. Do I know where my money goes each month?", size=10, after=1)
     d.p("     ☐ Yes     ☐ Mostly     ☐ Some idea     ☐ Not really", size=10, after=5)
@@ -193,7 +201,15 @@ def guide():
     d.p("     ☐ Have some money left     ☐ Just break even     ☐ Run short", size=10, after=5)
     d.p("3. When something unexpected comes up (a car repair, a medical bill), I usually:", size=10, after=1)
     d.p("     ☐ Use savings    ☐ Borrow from family or friends    ☐ Use a credit card "
-        "or loan    ☐ Fall behind", size=10, after=0)
+        "or loan    ☐ Fall behind", size=10, after=6)
+    d.question(4, "Where does the biggest share of my money go?", 2, size=10)
+    d.question(5, "What surprised me, or what was I relieved to see?", 2, size=10)
+    d.question(6, "One expense I’ll watch closely on my tracker this week:", 1, size=10)
+    d.question(7, "One thing I’m grateful for that money didn’t buy:", 1, size=10)
+    d.principle("You can’t change what you don’t look at. Knowing your numbers, without "
+                "judging them, is the first step to changing them.")
+    d.label("My first step this week", before=8)
+    d.lines(2)
 
     # Homework: tracker --------------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · 7-Day Money & Emotion Tracker")
@@ -220,14 +236,6 @@ def guide():
     d.question(3, "What’s one spending habit I’d like to change?", 2, size=10)
     d.question(4, "What’s one thing I’m proud of from this week?", 2, size=10)
 
-    # Notes ---------------------------------------------------------------
-    d.new_page_section(margins=0.6, footer=FOOT + " · Notes")
-    d.h1("Session 1 Notes")
-    d.note("Space for your thoughts during our discussions.")
-    for head in ["Money messages from growing up", "My money snapshot", "What leads me to spend",
-                 "Things I want to remember"]:
-        d.label(head, before=8)
-        d.lines(4)
     d.save(OUT)
 
 

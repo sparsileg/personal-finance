@@ -19,9 +19,8 @@ def guide():
         "Think about needs, wants, and what matters most to you",
         "Choose a buddy for the coming week",
     ])
-    d.p("As last week, a volunteer reads each **Read Aloud** box, and reading is always "
-        "optional. Your worksheets are at the end of this guide. Have your tracker from last "
-        "week, and any pay stubs or bills you brought, ready to use.")
+    d.how_to_use("Have your tracker from last week, and any pay stubs or bills you brought, "
+                 "ready to use.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
@@ -132,6 +131,15 @@ def guide():
     d.p("**Next week:** We’ll talk about debt: how to pay it down, and how to break the cycle "
         "of borrowing.")
 
+    # Notes ---------------------------------------------------------------
+    d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
+    d.h1("Session 2 Notes")
+    d.note("Space for your thoughts during our discussions.")
+    for head in ["What I learned from tracking", "Every dollar has a job",
+                 "Building my budget", "Needs, wants, and what matters to me"]:
+        d.label(head, before=8)
+        d.lines(4)
+
     # Worksheet: real life budget ---------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · My Real Life Budget")
     d.h1("My Real Life Budget")
@@ -203,6 +211,10 @@ def guide():
         "My income $________ × 0.50 = $________ for needs     × 0.30 = $________ for wants"
         "     × 0.20 = $________ for saving and giving",
     ])
+    d.principle("Give every dollar a job before the month begins, and save a little first, even "
+                "$5. A plan you adjust as you go beats no plan at all.")
+    d.label("My first step this week", before=8)
+    d.lines(2)
 
     # Homework: weekly tracker --------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Weekly Budget Tracker")
@@ -233,14 +245,6 @@ def guide():
     d.question(2, "What will I change in my budget for next week?", 2, size=10)
     d.question(3, "What am I proud of this week?", 2, size=10)
 
-    # Notes ---------------------------------------------------------------
-    d.new_page_section(margins=0.6, footer=FOOT + " · Notes")
-    d.h1("Session 2 Notes")
-    d.note("Space for your thoughts during our discussions.")
-    for head in ["What I learned from tracking", "Every dollar has a job",
-                 "Building my budget", "Needs, wants, and what matters to me"]:
-        d.label(head, before=8)
-        d.lines(4)
     d.save(OUT)
 
 
