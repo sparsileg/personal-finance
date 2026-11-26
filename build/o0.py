@@ -13,7 +13,7 @@ SESSIONS = [
      ["Opening Inspiration (5)", "Welcome and Getting Started (15)",
       "Money Messages from Growing Up (12)", "Your Money Snapshot (25)",
       "What Leads Us to Spend (10)", "Wrap-up and This Week’s Commitment (8)"],
-     "My Financial Snapshot", "7-Day Money & Emotion Tracker",
+     "My Financial Snapshot (back: What My Snapshot Tells Me)", "7-Day Money & Emotion Tracker",
      "Money Messages from My Past; What Leads Me to Spend; The Future I Want"),
     ("2", "Creating a Budget", "A budget that fits your real life",
      "Using what they learned from tracking, participants build a budget with their real "
@@ -22,7 +22,7 @@ SESSIONS = [
      ["Opening Inspiration (5)", "Buddy Check-In and Tracking Review (10)",
       "What a Budget Really Is (15)", "Build Your Real Life Budget (25)",
       "Needs, Wants, and What Matters (12)", "Wrap-up and This Week’s Commitment (8)"],
-     "My Real Life Budget", "Weekly Budget Tracker",
+     "My Real Life Budget (front and back)", "Weekly Budget Tracker",
      "Needs, Wants, or It Depends?; My Budget Success Plan; Budget Problem-Solving"),
     ("3", "Breaking the Debt Cycle", "A plan to pay down what you owe, and stay out of new debt",
      "Participants see what interest really costs, list everything they owe, and choose a "
@@ -31,7 +31,7 @@ SESSIONS = [
      ["Opening Inspiration (5)", "Buddy Check-In and Budget Review (10)",
       "The True Cost of Debt (15)", "Make Your Debt Plan (25)",
       "Know Your Rights and Ask for Help (12)", "Wrap-up and This Week’s Commitment (8)"],
-     "My Debt Plan", "Weekly Debt Tracker",
+     "My Debt Plan (back: Seeing the Finish Line)", "Weekly Debt Tracker",
      "What Leads Me into Debt; Calling Someone I Owe; The Day My Debt Is Paid"),
     ("4", "Financial Safety Net", "A cushion for life’s surprises, starting small",
      "Participants see that most “emergencies” are surprises they can plan for, and set a "
@@ -40,7 +40,7 @@ SESSIONS = [
      ["Opening Inspiration (5)", "Buddy Check-In and Debt Progress (10)",
       "Surprises We Can Plan For (15)", "Build Your Safety Net Plan (25)",
       "Other Safety Nets (12)", "Wrap-up and This Week’s Commitment (8)"],
-     "My Safety Net Plan", "Weekly Safety Net Tracker",
+     "My Safety Net Plan (back: Putting My Safety Net to Work)", "Weekly Safety Net Tracker",
      "My Surprise Expenses; Finding Money to Save; Insurance and Other Safety Nets"),
     ("5", "Building Wealth (optional)",
      "Small, steady steps toward a secure and meaningful future",
@@ -51,9 +51,23 @@ SESSIONS = [
      ["Opening Inspiration (5)", "Check-In and Looking Back (12)",
       "Time Is Your Best Friend (15)", "Growing Money for Later (13)",
       "My Next Steps (20)", "Celebration and Closing (10)"],
-     "My Next Steps Plan", "Monthly Check-In (for three months after the course)",
+     "My Next Steps Plan (back: Keeping It Going)", "Monthly Check-In (for three months after the course)",
      "The Power of Starting Now; Saving or Investing?; Looking Back, Looking Ahead"),
 ]
+
+
+PRINCIPLES = {
+    "1": "You can’t change what you don’t look at. Knowing your numbers, without judging "
+         "them, is the first step to changing them.",
+    "2": "Give every dollar a job before the month begins, and save a little first, even $5. "
+         "A plan you adjust as you go beats no plan at all.",
+    "3": "Focus on one debt at a time, and roll each finished payment into the next. Every "
+         "payoff speeds up the next one. Avoid new debt while you do.",
+    "4": "Save first, start small, and keep it for real emergencies. Even $100 set aside turns "
+         "many crises into inconveniences, and keeps you out of new debt.",
+    "5": "Small, steady steps, kept up over time, add up. Start where you are, keep going, and "
+         "lift others along the way.",
+}
 
 
 def build():
@@ -89,6 +103,10 @@ def build():
         "**The same pattern each week.** An opening thought, a buddy check-in, a few key ideas, "
         "a hands-on worksheet with real numbers, discussion, and a wrap-up with a commitment, "
         "a moment of gratitude, and a closing circle.",
+        "**Worksheets that change something.** Each in-class worksheet is printed front and "
+        "back. The front uses each person’s real numbers. The back puts them to work with a "
+        "short exercise, then ends with the principle behind it and a first step for the "
+        "week. Anything left unfinished in class can be finished at home.",
         "**Opening thoughts.** Each session opens with a short quote from a general conference "
         "address, chosen for simple guidance toward a happy, meaningful life.",
         "**Buddies.** Members pair up in class and check in with each other at least once "
@@ -103,8 +121,8 @@ def build():
     d.grid(["Document", "Who uses it", "What’s in it"], [
         ["Session guide, such as “3 - Breaking the Debt Cycle”", "Everyone",
          "The session plan with minutes for each part, Read Aloud boxes, and discussion "
-         "questions, followed by the in-class worksheet, the homework tracker, and a notes "
-         "page, each starting on its own sheet of paper"],
+         "questions, followed by a notes page. Then come the in-class worksheet (front and "
+         "back) and the homework tracker, each starting on its own sheet of paper"],
         ["Facilitator Notes", "The facilitator",
          "Two pages: goals, the facilitator’s role, how to prepare, timing and what to "
          "shorten, and handling emotions and issues"],
@@ -123,16 +141,16 @@ def build():
         "Bring pens, calculators, and something to write on that the whole group can see.",
     ], size=S, after=1)
 
-    d.page_break()
     d.h2("The sessions")
     d.grid(["Session", "In-class worksheet", "Homework"],
            [[f"{n}. {title}", ws, hw] for n, title, _, _, _, ws, hw, _ in SESSIONS],
-           [2.6, 1.9, 2.0], height=0.3, size=10)
+           [2.0, 2.6, 1.9], height=0.3, size=10)
     for n, title, sub, focus, parts, ws, hw, th in SESSIONS:
-        d.h3(f"Session {n}: {title}", before=10)
+        d.h3(f"Session {n}: {title}", before=6)
         d.p(sub, italic=True, size=S, after=2, keep_next=True)
-        d.p(focus, size=S, after=2, keep_next=True)
+        d.p(focus, size=10, after=2, keep_next=True)
         d.p("**Parts (minutes):** " + "; ".join(parts) + ".", size=10, after=2)
+        d.p(f"**The principle:** {PRINCIPLES[n]}", size=10, after=2)
         d.p(f"**Take-home (optional):** {th}.", size=10, after=4)
     d.save(OUT)
 
