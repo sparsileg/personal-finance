@@ -86,17 +86,18 @@ class Doc:
 
     # ----- text -------------------------------------------------------------
     def _runs(self, p, text, size=None, italic=False, color=None, bold=False):
-        # **bold** markup
+        # **bold** and *italic* markup
         for i, part in enumerate(re.split(r"\*\*", text)):
-            if not part:
-                continue
-            r = p.add_run(part)
-            r.bold = bold or (i % 2 == 1)
-            r.italic = italic
-            if size:
-                r.font.size = Pt(size)
-            if color is not None:
-                r.font.color.rgb = color
+            for j, sub in enumerate(re.split(r"\*", part)):
+                if not sub:
+                    continue
+                r = p.add_run(sub)
+                r.bold = bold or (i % 2 == 1)
+                r.italic = italic or (j % 2 == 1)
+                if size:
+                    r.font.size = Pt(size)
+                if color is not None:
+                    r.font.color.rgb = color
         return p
 
     def _space(self, p, before=None, after=None, keep_next=False):

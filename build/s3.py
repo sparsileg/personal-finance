@@ -28,7 +28,7 @@ def guide():
     d.read_aloud([
         "“Interest never sleeps nor sickens nor dies; it never goes to the hospital; it works "
         "on Sundays and holidays; it never takes a vacation. … Once in debt, interest is your "
-        "companion every minute of the day and night.” (J. Reuben Clark Jr., quoted by Joseph B. "
+        "companion every minute of the day and night; …” (J. Reuben Clark Jr., quoted by Joseph B. "
         "Wirthlin, “Earthly Debts, Heavenly Debts,” April 2004 general conference)",
         "“When we make purchases on credit, they give us only an illusion of prosperity. We think "
         "we own things, but the reality is, our things own us.” (Joseph B. Wirthlin, same talk)",

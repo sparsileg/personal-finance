@@ -26,7 +26,7 @@ def guide():
     d.h2("1. Opening Inspiration", 5)
     d.read_aloud([
         "“I am convinced that it is not the amount of money an individual earns that brings "
-        "peace of mind as much as it is having control of his money. Money can be an obedient "
+        "peace of mind as much as it is having *control* of his money. Money can be an obedient "
         "servant but a harsh taskmaster.”",
         "“Many people think a budget robs them of their freedom. On the contrary, successful "
         "people have learned that a budget makes real economic freedom possible.” (N. Eldon "
