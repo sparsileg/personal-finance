@@ -19,44 +19,53 @@ def build():
         "Understand why a small safety net breaks the debt cycle, even while paying debt",
         "Have a first savings goal, a weekly amount, and a place to keep the money",
         "Know about other safety nets: insurance, community help, and people",
-        "Have a buddy, and know how to use the **Weekly Safety Net Tracker**",
+        "Know what to do when a setback hits: no shame, call a buddy, restart smaller",
+        "Recognize and celebrate the progress they’ve made in the course",
+        "Leave with a buddy and a plan to check in monthly, using **Keeping It Going**",
     ], size=S, after=1)
-    d.p("A person who leaves having saved their first dollar, or knowing where it will go, has "
-        "succeeded.", size=S, after=4)
+    d.p("This is the last session, so it is a celebration as much as a lesson. A person who "
+        "leaves having saved their first dollar, or knowing where it will go, and with a buddy "
+        "to keep going, has succeeded.", size=S, after=4)
 
     d.h2("Your role")
     d.p("As before, you guide the council rather than teach it. Keep time, invite every voice, "
         "and let the group share ideas with each other. Ask for volunteers to read; never call on "
-        "anyone. Celebrate a $5 safety net as warmly as a $500 one. Keep insurance simple: the "
-        "goal is awareness, not expert advice.", size=S, after=4)
+        "anyone. Celebrate a $5 safety net as warmly as a $500 one.", size=S, after=4)
 
     d.h2("How to prepare")
     d.bullets([
         "Fill out My Safety Net Plan, front and back, yourself or for a made-up person on a tight "
-        "income. The back, **Putting My Safety Net to Work**, ends with the principle and a "
-        "first step. People can finish it at home, but read the principle aloud before moving on.",
+        "income. Read the principle on the back aloud in class, even if people finish it at "
+        "home.",
         "Update the **local resource list**: 211, food pantries, utility and rent help, Medicaid "
         "and CHIP offices, free tax help (VITA), and credit unions or banks with low-cost "
         "accounts.",
-        "Bring guides, pens, calculators, a flipchart or whiteboard for listing surprise "
-        "expenses, and, if you like, plain envelopes people can label “Safety Net.”",
+        "Bring guides, pencils, blank paper, calculators, a flipchart or whiteboard for listing "
+        "surprise expenses, and, if you like, plain envelopes people can label “Safety Net” "
+        "and simple certificates of completion with each person’s name. Consider light "
+        "refreshments at the end to celebrate, if the host can provide them.",
         "Think of a time a small amount of savings, or someone’s help, got you through a "
-        "surprise.",
+        "surprise. Consider planning a reunion about three months from now.",
+        "If you and the host plan to hold the optional Session 5, invite people at the end. "
+        "The Session 4 materials don’t mention it.",
     ], size=S, after=1)
 
     d.h2("Timing")
-    d.p("The plan below uses 75 minutes, leaving about 15 for a late start, a break, and "
-        "conversation.", size=S, after=4, keep_next=True)
+    d.p("This session runs about 105 minutes. The plan uses 90, leaving about 15 for a late "
+        "start, a break, and refreshments.", size=S, after=4, keep_next=True)
     d.grid(["Part", "Minutes", "If you're running behind"], [
         ["1. Opening Inspiration", "5", "Take one or two answers."],
         ["2. Buddy Check-In and Debt Progress", "10", "Use one group question."],
-        ["3. Surprises We Can Plan For", "15", "List five surprises; use one question."],
+        ["3. Surprises We Can Plan For", "12", "List five surprises; use one question."],
         ["4. Build Your Safety Net Plan", "25", "Protect this time. Never go below 15 minutes "
-         "on the worksheet, and don’t skip choosing buddies."],
-        ["5. Other Safety Nets", "12", "Read the box; use the first question."],
-        ["6. Wrap-up and Commitment", "8", "Never skip the homework and the closing circle."],
-        ["Total", "75", ""],
-    ], [3.0, 0.75, 3.15], height=0.26, size=10, bold_rows=(6,), shade_rows=(6,),
+         "on the worksheet, and don’t skip choosing buddies for the months ahead."],
+        ["5. Other Safety Nets", "10", "Read the box; use the first question."],
+        ["6. When Life Knocks You Off Course", "10", "Read the five steps; use one "
+         "question."],
+        ["7. Looking Back and Keeping It Going", "18", "Never skip the box, the monthly "
+         "check-in plan, and the closing circle."],
+        ["Total", "90", ""],
+    ], [3.0, 0.75, 3.15], height=0.26, size=10, bold_rows=(7,), shade_rows=(7,),
            keep_together=True)
 
     d.h2("Handling emotions and issues")
@@ -76,9 +85,10 @@ def build():
          "questions (unexpected, necessary, urgent), and encourage them to refill it."),
         ("Insurance questions.", "Don’t recommend specific policies or companies. Point "
          "people to their job, HealthCare.gov, 211, or a licensed agent."),
-        ("Pride about accepting help.", "Some people feel ashamed to use community programs. "
-         "Remind the group that these programs exist for times like this, and that they may "
-         "one day help others in return."),
+        ("Pride about accepting help.", "Remind the group that community programs exist for "
+         "times like this, and that they may one day help others in return."),
+        ("Sadness that the course is ending.", "Plan the monthly buddy check-ins together, "
+         "and consider a reunion. Celebrate each person’s progress from their own start."),
     ]:
         d.p(f"**{head}** {text}", size=S, after=4)
     d.save(OUT)

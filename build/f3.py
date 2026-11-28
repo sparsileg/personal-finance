@@ -38,8 +38,11 @@ def build():
         "Find the nearest **nonprofit credit counseling** agency (members of the National "
         "Foundation for Credit Counseling, nfcc.org) and add it to your resource list, along "
         "with any local free legal aid.",
-        "Bring guides, pens, calculators, the resource list, and a flipchart or whiteboard.",
+        "Bring guides, pencils, blank paper, calculators, the resource list, and a flipchart or "
+        "whiteboard.",
         "Practice the phone script once out loud, so you can model it calmly.",
+        "At the end, tell people Session 4 runs about 15 minutes longer, so they can plan "
+        "rides and childcare.",
     ], size=S, after=1)
 
     d.h2("Timing")

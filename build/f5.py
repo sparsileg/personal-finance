@@ -12,51 +12,61 @@ def build():
     d.p("**Building Wealth (optional session).** Use with the Session 5 guide, which you and the "
         "group read together.", size=S, after=4)
 
+    d.h2("Is this session right for your group?")
+    d.p("Session 5 is optional, and Sessions 1–4 make a complete course without it. Decide "
+        "with the host whether your group will benefit from learning about investing. It "
+        "fits best when most people have a working budget and have started a safety net. You "
+        "can hold it the week after Session 4, or a few months later as a reunion.",
+        size=S, after=4)
+
     d.h2("Session goals")
     d.p("By the end of the session, each person should:", size=S, after=2)
     d.bullets([
-        "Recognize and celebrate the progress they’ve made",
-        "See “wealth” as enough, with peace of mind and room to help others, not riches",
         "Understand that time helps small amounts grow, and that it’s never too late to start",
-        "Know the difference between saving and investing, and the value of a job match",
+        "Know the difference between saving and investing",
+        "Know why low-fee index funds, not single stocks, are a good way to start",
+        "Expect the market to drop at times, and know not to sell in fear",
+        "Know the difference between retirement accounts and regular investment accounts, "
+        "the value of a job match, and why not to cash out when changing jobs",
+        "Know that Social Security is most people’s main retirement income",
         "Know the warning signs of scams",
-        "Leave with a **My Next Steps Plan** and a buddy to check in with monthly",
+        "Leave with **My Plan for Later** and a next step, even if that step is their safety net",
     ], size=S, after=1)
-    d.p("This is a celebration as much as a lesson. If people leave hopeful and connected, the "
-        "session worked.", size=S, after=4)
+    d.p("If people leave knowing their next step and feeling it’s within reach, the session "
+        "worked.", size=S, after=4)
 
     d.h2("Your role")
     d.p("As before, you guide the council rather than teach it. Ask for volunteers to read; never "
-        "call on anyone. **Don’t give investment advice** or recommend specific companies or "
-        "products. Keep it simple: safety net first, costly debt next, then saving for later, "
-        "and always get a job match. For detailed questions, point people to their job’s HR "
-        "office, free tax help (VITA), or a fee-only advisor.", size=S, after=4)
+        "call on anyone. **Don’t give investment advice** or name specific companies, funds, or "
+        "products. You can explain what an index fund is, but not which one to buy. Keep it "
+        "simple: safety net first, costly debt next, then saving for later, and always get a "
+        "job match. For detailed questions, point people to their job’s HR office, free tax "
+        "help (VITA), or a fee-only advisor.", size=S, after=4)
 
     d.h2("How to prepare")
     d.bullets([
-        "Read the guide and practice explaining the $25-a-month table in your own words. Fill out "
-        "My Next Steps Plan, front and back. The back, **Keeping It Going**, ends with the "
-        "principle. People can finish it at home, but read the principle aloud before moving on.",
+        "Read the guide, and practice explaining the $25-a-month table and the difference "
+        "between a stock and an index fund in your own words. Fill out My Plan for Later, front "
+        "and back. Read the principle aloud in class, even if people finish it at home.",
         "Find the nearest free tax help site (VITA) and add it to the resource list.",
-        "Bring guides, pens, the resource list, and, if you like, simple certificates of "
-        "completion with each person’s name.",
-        "Consider light refreshments to celebrate, and think about planning a reunion about "
-        "three months from now.",
+        "Bring guides, pencils, blank paper, calculators, and the resource list.",
     ], size=S, after=1)
 
     d.h2("Timing")
-    d.p("The plan below uses 75 minutes, leaving about 15 for a late start, a break, and "
-        "celebration.", size=S, after=4, keep_next=True)
+    d.p("This session runs about 105 minutes. The plan uses 90, leaving about 15 for a late "
+        "start, a break, and questions.", size=S, after=4, keep_next=True)
     d.grid(["Part", "Minutes", "If you're running behind"], [
         ["1. Opening Inspiration", "5", "Take one or two answers."],
-        ["2. Check-In and Looking Back", "12", "Use one group question."],
-        ["3. Time Is Your Best Friend", "15", "Read the box and table; use one question."],
-        ["4. Growing Money for Later", "13", "Read both boxes; use one question."],
-        ["5. My Next Steps", "20", "Protect this time, especially choosing a buddy for "
-         "the months ahead."],
-        ["6. Celebration and Closing", "10", "Never skip the closing circle."],
-        ["Total", "75", ""],
-    ], [3.0, 0.75, 3.15], height=0.26, size=10, bold_rows=(6,), shade_rows=(6,),
+        ["2. Buddy Check-In", "8", "Use one group question."],
+        ["3. Time Is Your Best Friend", "12", "Read the box and table; use one question."],
+        ["4. Saving and Investing", "15", "Read the box; use one question."],
+        ["5. When the Market Drops", "8", "Read the box; use one question."],
+        ["6. Retirement and Other Long-Term Investing", "20", "Read the box and scam signs; "
+         "skip the questions."],
+        ["7. My Plan for Later", "15", "Protect this time. People can finish the back at home."],
+        ["8. Wrap-up and Closing", "7", "Never skip the closing circle."],
+        ["Total", "90", ""],
+    ], [3.0, 0.75, 3.15], height=0.26, size=10, bold_rows=(8,), shade_rows=(8,),
            keep_together=True)
 
     d.h2("Handling emotions and issues")
@@ -67,15 +77,17 @@ def build():
          "years of saving, plus a safety net, makes later life easier."),
         ("Nothing left to save.", "Many people won’t be ready to invest. That’s fine. Their "
          "next steps are their safety net and debt plan. Celebrate those."),
-        ("Fear of losing money.", "Acknowledge it. Savings is for money needed soon; investing "
-         "is only for money that can stay put for years."),
-        ("Get-rich-quick ideas.", "If someone mentions a “sure thing,” crypto tip, or "
-         "high-pressure offer, use the warning signs in the guide, gently and without "
-         "embarrassing them."),
-        ("Sadness that the course is ending.", "Plan the monthly buddy check-ins together, "
-         "and consider a reunion. Remind people they can keep meeting on their own."),
-        ("Feeling behind others.", "Everyone started in a different place. Celebrate each "
-         "person’s progress against their own starting point, not anyone else’s."),
+        ("Fear of losing money.", "Acknowledge it. Investing is only for money that can stay "
+         "put for years. Point to the Ups and Downs box: past drops "
+         "in the whole market came back over time, and selling in fear locked in the loss."),
+        ("A hot stock or crypto tip.", "If someone mentions a “sure thing” or a stock a "
+         "friend is buying, don’t argue. Point back to **One Company, or Many?**: one company can fall a lot, "
+         "and an index fund spreads the risk. Use the scam warning signs gently, without "
+         "embarrassing anyone."),
+        ("Detailed tax or account questions.", "Which kind is right for me, how much to put "
+         "in, which fund: say it’s a good question for HR, free tax help (VITA), or a "
+         "fee-only advisor."),
+        ("Benefits and savings limits.", "Rules vary. Don’t guess; refer people to their caseworker."),
     ]:
         d.p(f"**{head}** {text}", size=S, after=4)
     d.save(OUT)

@@ -39,11 +39,13 @@ def build():
         "and a first step. People can finish it at home, but read the principle aloud before moving on.",
         "Make a **local resource list** to hand out: 211, food pantries, SNAP and WIC offices, "
         "utility and rent assistance, free tax help, and nonprofit credit counseling.",
-        "Bring a guide for each person, pens, name tags, a flipchart or whiteboard, a few "
-        "calculators, and spare copies of the tracker.",
-        "Offer childcare and a meal if you can. Invite people to bring a rough idea of their "
-        "monthly income and bills, and a pay stub if handy, but to come even with nothing.",
-        "Arrange chairs in a circle, and arrive 15 minutes early to greet people as they come in.",
+        "Bring a guide for each person, pencils with erasers (not pens, so mistakes erase "
+        "easily), blank paper, name tags, a flipchart or whiteboard, a few calculators, and "
+        "spare copies of the tracker. Bring pencils and blank paper to every session.",
+        "Offer childcare if you can. Invite people to bring a rough idea of their monthly income "
+        "and bills, and a pay stub if handy, but to come even with nothing.",
+        "Arrange tables in a square or rectangle so everyone faces each other and has a hard "
+        "surface to write on. Arrive 15 minutes early to greet people as they come in.",
     ], size=S, after=1)
 
     d.h2("Timing")

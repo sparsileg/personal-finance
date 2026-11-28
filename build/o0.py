@@ -36,23 +36,31 @@ SESSIONS = [
     ("4", "Financial Safety Net", "A cushion for life’s surprises, starting small",
      "Participants see that most “emergencies” are surprises they can plan for, and set a "
      "first savings goal, even $1 a week. They also look at the other safety nets in their "
-     "lives: insurance, community programs, and people.",
+     "lives: insurance, community programs, and people, and plan what to do when life knocks "
+     "them off course. As the last session, it closes the course: participants look back at "
+     "how far they’ve come and choose a buddy to check in with monthly after the course.",
      ["Opening Inspiration (5)", "Buddy Check-In and Debt Progress (10)",
-      "Surprises We Can Plan For (15)", "Build Your Safety Net Plan (25)",
-      "Other Safety Nets (12)", "Wrap-up and This Week’s Commitment (8)"],
-     "My Safety Net Plan (back: Putting My Safety Net to Work)", "Weekly Safety Net Tracker",
-     "My Surprise Expenses; Finding Money to Save; Insurance and Other Safety Nets"),
+      "Surprises We Can Plan For (12)", "Build Your Safety Net Plan (25)",
+      "Other Safety Nets (10)", "When Life Knocks You Off Course (10)",
+      "Looking Back and Keeping It Going (18)"],
+     "My Safety Net Plan (back: Putting My Safety Net to Work)",
+     "Weekly Safety Net Tracker (back: Keeping It Going, a monthly check-in for after the course)",
+     "My Surprise Expenses; Finding Money to Save; Insurance and Other Safety Nets; Looking "
+     "Back, Looking Ahead"),
     ("5", "Building Wealth (optional)",
      "Small, steady steps toward a secure and meaningful future",
-     "Here “wealth” means enough, with peace of mind and room to help others. Participants "
-     "celebrate their progress, see how time helps small amounts grow, learn the difference "
-     "between saving and investing, learn to spot scams, and plan their next steps with a "
-     "buddy for the months after the course.",
-     ["Opening Inspiration (5)", "Check-In and Looking Back (12)",
-      "Time Is Your Best Friend (15)", "Growing Money for Later (13)",
-      "My Next Steps (20)", "Celebration and Closing (10)"],
-     "My Next Steps Plan (back: Keeping It Going)", "Monthly Check-In (for three months after the course)",
-     "The Power of Starting Now; Saving or Investing?; Looking Back, Looking Ahead"),
+     "For groups ready to think about investing. Here “wealth” means enough, with peace of "
+     "mind and room to help others. Building on Sessions 1–4, participants see how time helps "
+     "small amounts grow, learn why low-fee index funds are a better start than single stocks "
+     "and why not to sell when the market drops, learn the difference between retirement "
+     "accounts and other long-term investing, how Social Security fits in, and why not to "
+     "cash out when changing jobs, learn to spot scams, and choose a next step.",
+     ["Opening Inspiration (5)", "Buddy Check-In (8)",
+      "Time Is Your Best Friend (12)", "Saving and Investing (15)",
+      "When the Market Drops (8)", "Retirement and Other Long-Term Investing (20)",
+      "My Plan for Later (15)", "Wrap-up and Closing (7)"],
+     "My Plan for Later (back: One Company, or Many?)", "Finding Out",
+     "The Power of Starting Now; Saving or Investing?; What Fees Cost"),
 ]
 
 
@@ -65,8 +73,8 @@ PRINCIPLES = {
          "payoff speeds up the next one. Avoid new debt while you do.",
     "4": "Save first, start small, and keep it for real emergencies. Even $100 set aside turns "
          "many crises into inconveniences, and keeps you out of new debt.",
-    "5": "Small, steady steps, kept up over time, add up. Start where you are, keep going, and "
-         "lift others along the way.",
+    "5": "Build your safety net first. Then invest a little, steadily, in low-fee funds that "
+         "own many companies, and give it time to grow.",
 }
 
 
@@ -76,9 +84,11 @@ def build():
     d.p("**Course overview:** four weekly sessions, plus an optional fifth", size=13, after=10)
 
     d.h2("Who it’s for")
-    d.p("People receiving support through a community organization, food pantry, or church. "
-        "Most have had little chance to learn about money. Some have little or no work; others "
-        "have steady jobs but haven’t been able to save or plan ahead. The materials use plain "
+    d.p("Anyone who wants to learn a few things about understanding and managing their income, "
+        "expenses, and savings, whether they’re starting from scratch or just want a refresher. "
+        "People come from all kinds of situations: some have little or no work, some have steady "
+        "jobs but haven’t been able to save or plan ahead, and some are doing fine and want to "
+        "sharpen their skills. The materials use plain "
         "language and examples that fit tight or irregular incomes, and they never assume "
         "spare money, a bank account, or good credit.", size=S)
 
@@ -94,8 +104,10 @@ def build():
 
     d.h2("How the course works")
     d.bullets([
-        "**Length.** Each session takes about 90 minutes. The guide plans 75, leaving time for a "
-        "late start, a break, and good conversation.",
+        "**Length.** Sessions 1–3 take about 90 minutes; the guide plans 75, leaving time for "
+        "a late start, a break, and good conversation. Session 4, and the optional Session 5, "
+        "take about 105 minutes, with 90 planned, for more discussion and, in Session 4, a "
+        "closing celebration with light refreshments if the host can provide them.",
         "**A council, not a class.** There is no teacher or expert. A facilitator keeps time and "
         "invites every voice. The group reads the session guide together, and volunteers read "
         "the Read Aloud boxes. Reading aloud is always optional. The guide also works for "
@@ -107,12 +119,17 @@ def build():
         "back. The front uses each person’s real numbers. The back puts them to work with a "
         "short exercise, then ends with the principle behind it and a first step for the "
         "week. Anything left unfinished in class can be finished at home.",
-        "**Opening thoughts.** Each session opens with a short quote from a general conference "
-        "address, chosen for simple guidance toward a happy, meaningful life.",
+        "**Opening thoughts.** Each session opens with a short, well-known quote tied to the "
+        "week’s topic, chosen for simple guidance toward a happy, meaningful life.",
         "**Buddies.** Members pair up in class and check in with each other at least once "
         "during the week. They can switch buddies each week.",
         "**Homework.** One weekly tracker, plus optional take-home worksheets for those who "
         "want to go further.",
+        "**An optional fifth session.** Session 4 closes the course, and Sessions 1–4 are "
+        "complete on their own; their materials don’t mention Session 5. Session 5, Building "
+        "Wealth, covers investing for later. It isn’t right for every group, so the "
+        "facilitator and host decide whether to hold it, either the week after Session 4 or "
+        "a few months later as a reunion.",
         "**Tone.** Positive and free of shame, grateful for what people already have, and "
         "encouraging them to give back to family, church, friends, and community.",
     ], size=S, after=1)
@@ -127,7 +144,7 @@ def build():
          "Two pages: goals, the facilitator’s role, how to prepare, timing and what to "
          "shorten, and handling emotions and issues"],
         ["Take-Home Worksheets", "Anyone who wants more",
-         "Three optional worksheets that go deeper into the week’s topic"],
+         "Three or four optional worksheets that go deeper into the week’s topic"],
     ], [2.1, 1.4, 3.0], height=0.3, size=10)
 
     d.h2("Before the course begins")
@@ -138,7 +155,9 @@ def build():
         "Print a session guide for each person, and the facilitator notes for yourself. Print "
         "double-sided: each worksheet starts on its own sheet (the files include a blank page "
         "where needed), so worksheets can be pulled out or printed separately.",
-        "Bring pens, calculators, and something to write on that the whole group can see.",
+        "Bring pencils with erasers (not pens, so mistakes erase easily), blank paper, "
+        "calculators, and something to write on that the whole group can see. Set up tables in "
+        "a square or rectangle so everyone faces each other and has a hard surface to write on.",
     ], size=S, after=1)
 
     d.h2("The sessions")

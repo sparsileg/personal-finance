@@ -52,7 +52,7 @@ def build():
     d.checks([
         "Have my account number, my balance, and my budget in front of me",
         "Know what I can honestly afford to pay each month: $________",
-        "Have paper and a pen to write down what they say",
+        "Have paper and a pencil to write down what they say",
     ], size=10, after=1)
     d.label("What I’ll say")
     d.p("“Hi, my name is ____________, and I’m calling about my account ending in ______. "

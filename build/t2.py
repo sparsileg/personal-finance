@@ -11,8 +11,9 @@ def build():
     d.h1("Which Paycheck Pays What")
     d.note("Session 2 · Take-home, optional. These worksheets go deeper into what we talked about "
            "in class. Do them only if you have time after your tracker, which comes first.")
-    d.p("Bills come due on certain days. For each paycheck, list the bills due before the next "
-        "one, so nothing is late. Put housing, utilities, food, and getting to work first.",
+    d.p("Bills come due on certain days. Write each bill under the paycheck that comes just "
+        "before the bill’s due date. That paycheck pays it, so nothing is late. Put housing, "
+        "utilities, food, and getting to work first.",
         size=11)
     rows, merged, shade = [], {}, []
     for n in range(1, 5):
@@ -28,8 +29,8 @@ def build():
            merged_rows=merged, bold_rows=tuple(shade), shade_rows=tuple(shade))
     d.box([
         "**Tips.** Many companies will move a due date if you ask, so bills line up with your "
-        "paychecks. Paid every two weeks? Two months a year have a third paycheck. Give it a job "
-        "before it comes.",
+        "paychecks. Paid every two weeks? Two months a year have a third paycheck. Paid every "
+        "week? Four months a year have a fifth. Give each extra paycheck a job before it comes.",
     ])
     d.question(1, "Which paycheck is the tightest? What could I move to a different one?", 1,
                size=10)

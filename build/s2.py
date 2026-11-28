@@ -25,14 +25,11 @@ def guide():
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
     d.read_aloud([
-        "“I am convinced that it is not the amount of money an individual earns that brings "
-        "peace of mind as much as it is having *control* of his money. Money can be an obedient "
-        "servant but a harsh taskmaster.”",
-        "“Many people think a budget robs them of their freedom. On the contrary, successful "
-        "people have learned that a budget makes real economic freedom possible.” (N. Eldon "
-        "Tanner, “Constancy amid Change,” October 1979 general conference)",
+        "“Beware of little expenses; a small leak will sink a great ship.” (Benjamin "
+        "Franklin, *The Way to Wealth*, 1758)",
     ])
-    d.discuss(["What would “having control of your money” feel like for you?"])
+    d.discuss(["What “small leaks” did your tracker show you this week? Which ones are "
+               "worth fixing, and which are worth keeping?"])
 
     # 2 -------------------------------------------------------------------
     d.h2("2. Buddy Check-In and Tracking Review", 10)
@@ -161,7 +158,7 @@ def guide():
         "Help from family or others",
         "Other: ________________",
     ], "Total coming in", widths=W, cols=2)
-    d.p("**Not paid monthly?** Paid every week: one paycheck × 4.33. Paid every two weeks: one paycheck × 2.17. Paid twice a month: one paycheck × 2.", size=9, before=2, after=2)
+    d.p("**Not paid monthly?** Paid every week: one paycheck × 4. Paid every two weeks or twice a month: one paycheck × 2. If you’re paid every week or every two weeks, a few months a year bring an extra paycheck. Leave it out here, and give it a job before it comes.", size=9, before=2, after=2)
     d.money_table("Step 2. Bills that stay about the same", [
         "Rent or mortgage",
         "Renter’s or home insurance",

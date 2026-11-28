@@ -28,26 +28,23 @@ def guide():
         "Notice what leads you to spend",
         "Choose a buddy to support you this week",
     ])
-    d.how_to_use("All you need is a pen.")
+    d.how_to_use("All you need is a pencil.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
     d.read_aloud([
-        "“I urge you … to look to the condition of your finances. I urge you to be modest "
-        "in your expenditures; discipline yourselves in your purchases to avoid debt to the extent "
-        "possible. Pay off debt as quickly as you can, and free yourselves from bondage.",
-        "“… If you have paid your debts, if you have a reserve, even though it be small, "
-        "then should storms howl about your head, you will have shelter for your [families] and "
-        "peace in your hearts.” (Gordon B. Hinckley, “To the Boys and to the Men,” "
-        "October 1998 general conference)",
+        "“Not everything that is faced can be changed; but nothing can be changed until it is "
+        "faced.” (James Baldwin, “As Much Truth As One Can Bear,” *The New York Times Book "
+        "Review*, 1962)",
     ])
     d.discuss([
-        "What could “a reserve, even though it be small” mean for you and your family?",
+        "Why can it be hard to look honestly at our money? What could looking make possible?",
     ])
-    d.p("This course helps each of us build that reserve, one small step at a time.")
+    d.p("This course helps each of us face our money without shame, and take small steps "
+        "from there.")
     d.p("**The road ahead:** first a budget that fits your life (Session 2), then a plan for "
-        "debt (Session 3), then a small safety net (Session 4), and then saving for later "
-        "(Session 5). Each step makes the next one possible.")
+        "debt (Session 3), and then a small safety net and a plan for keeping going after the "
+        "course (Session 4). Each step makes the next one possible.")
 
     # 2 -------------------------------------------------------------------
     d.h2("2. Welcome and Getting Started", 15)
@@ -174,7 +171,7 @@ def guide():
            "week will fill them in. This page is private.")
     d.money_table("Money coming in (each month)", INCOME, "Total coming in",
                   widths=(2.75, 0.9), cols=2)
-    d.p("**Not paid monthly?** Paid every week: one paycheck × 4.33. Paid every two weeks: one paycheck × 2.17. Paid twice a month: one paycheck × 2.", size=9, before=2, after=2)
+    d.p("**Not paid monthly?** Paid every week: one paycheck × 4. Paid every two weeks or twice a month: one paycheck × 2. If you’re paid every week or every two weeks, a few months a year bring an extra paycheck. Leave it out here, and give it a job before it comes.", size=9, before=2, after=2)
     d.money_table("Money going out (each month)", [
         "Rent or mortgage",
         "Utilities (electric, gas, water)",

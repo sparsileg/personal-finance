@@ -17,19 +17,19 @@ def guide():
         "Learn why a small cushion of savings matters, even while you pay off debt",
         "Make a plan to start or grow your own safety net",
         "Learn about other safety nets: insurance, community help, and each other",
-        "Choose a buddy for the coming week",
+        "Plan what to do when life knocks you off course",
+        "Look back at how far you’ve come",
+        "Choose a buddy to keep in touch with after the course",
     ])
     d.how_to_use("Have your budget and your debt plan ready to use.")
 
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
     d.read_aloud([
-        "“We ought to have a little money laid aside in case of a rainy day.” (Gordon B. "
-        "Hinckley, “If Ye Are Prepared Ye Shall Not Fear,” October 2005 general conference)",
-        "“They should save some money, if only a few coins each week. This modest approach will "
-        "soon enable them to have several months’ reserve.” (Keith B. McMullin, “Lay Up in "
-        "Store,” April 2007 general conference)",
+        "“The time to repair the roof is when the sun is shining.” (John F. Kennedy, State of "
+        "the Union address, January 11, 1962)",
     ])
+    d.p("A safety net is easiest to build before the storm, a little at a time.")
     d.discuss(["What would even a small cushion of savings change for you?"])
 
     # 2 -------------------------------------------------------------------
@@ -48,7 +48,7 @@ def guide():
         "like much.")
 
     # 3 -------------------------------------------------------------------
-    d.h2("3. Surprises We Can Plan For", 15)
+    d.h2("3. Surprises We Can Plan For", 12)
     d.read_aloud([
         "The car breaks down. A child needs new shoes. The rent goes up, a tooth aches, or work "
         "hours get cut. These feel like emergencies, but they happen to almost everyone, again "
@@ -72,7 +72,7 @@ def guide():
     d.read_aloud([
         "You don’t need thousands of dollars to start. Build your safety net in steps:",
     ], title="Start Small, Then Grow", bullets=[
-        "**Step 1:** A first goal of $100, then $500. This is enough for many small surprises.",
+        "**Step 1:** A first goal of $100, then $500. This is enough for many surprises.",
         "**Step 2:** One month of must-pay expenses: housing, utilities, food, getting to work, "
         "and minimum payments.",
         "**Step 3:** Over time, three months or more of must-pay expenses.",
@@ -84,19 +84,25 @@ def guide():
         "have an account. When extra money comes in, like a refund or extra hours, decide "
         "ahead of time how much goes to your safety net.",
     ])
+    d.p("**Keeping it safe.** Money in a bank or credit union marked “FDIC” or “NCUA” is "
+        "insured by the government. Cash at home is easier to lose or spend. If you open an "
+        "account, ask about monthly and overdraft fees. Many credit unions and “Bank On” "
+        "certified accounts have low or no fees.")
     d.h3("On your own", 15, before=2)
     d.p("Turn to the **My Safety Net Plan** worksheet. Use your budget to find your must-pay "
         "expenses, then choose a first goal and a weekly amount. If saving anything feels "
         "impossible right now, start with $1 a week or the change in your pocket. That counts.")
-    d.h3("With a new buddy", 7)
-    d.p("Pair up with someone new, or keep your buddy if you prefer. Trade phone numbers. Then:")
+    d.h3("Choose a buddy for the months ahead", 7)
+    d.p("This is the last session, but your plans keep going. Choose a buddy to keep in touch "
+        "with after the course: someone from any week, or your buddy now. Trade phone numbers. "
+        "Then:")
     d.bullets([
         "Share your first goal and where you’ll keep the money.",
         "Trade one idea for finding a few extra dollars to save.",
     ])
 
     # 5 -------------------------------------------------------------------
-    d.h2("5. Other Safety Nets", 12)
+    d.h2("5. Other Safety Nets", 10)
     d.read_aloud([
         "Savings is one safety net, but not the only one. **Insurance** protects against costs "
         "too big to save for. Health coverage comes first; Medicaid or CHIP may cover you or your "
@@ -113,33 +119,60 @@ def guide():
     ])
 
     # 6 -------------------------------------------------------------------
-    d.h2("6. Wrap-up and This Week’s Commitment", 8)
-    d.label("This week, I will:", before=2)
-    d.numbered([
-        "Choose a place for my safety net: an envelope, a jar, or a separate account.",
-        "Save something every week, even $1, and write it on the **Weekly Safety Net Tracker**.",
-        "Use my safety net only for real emergencies.",
-        "Keep up with my budget and my debt plan.",
-        "Look into one other safety net, such as health coverage, renter’s insurance, or a "
-        "community program.",
-        "Call or text my buddy at least once.",
+    d.h2("6. When Life Knocks You Off Course", 10)
+    d.p("Some months, the plan won’t work. A surprise empties your safety net. Work hours get "
+        "cut. A bill comes in bigger than you expected. This happens to everyone who makes a "
+        "plan. What matters is what you do next:")
+    d.bullets([
+        "**No shame.** A setback isn’t a failure. If your safety net softened the blow, it did "
+        "its job.",
+        "**Call your buddy.** Say what happened to someone who’s on your side.",
+        "**Reach for help before costly debt.** Call 211, a food pantry, or a utility or rent "
+        "program before a payday loan. Ask the people you owe for a payment plan.",
+        "**Restart smaller.** If $10 a week is too much right now, save $2. Make a new budget "
+        "for the month you’re really having.",
+        "**Refill your safety net** a little at a time, as soon as you can.",
     ])
-    d.p("**Want to go further?** The Session 4 take-home worksheets are optional. Do them only if "
-        "you have time after your tracker.")
+    d.discuss([
+        "What knocks your plans off course? What helps you get back on track?",
+        "After a setback, what would you want your buddy to say to you?",
+    ])
+
+    # 7 -------------------------------------------------------------------
+    d.h2("7. Looking Back and Keeping It Going", 18)
+    d.read_aloud([
+        "Four weeks ago, many of us felt worried or stuck about money. Since then, we’ve looked "
+        "honestly at our numbers, built a budget, made a plan for debt, and started a safety "
+        "net, even a small one. Most of all, we’ve learned that we don’t have to do this alone.",
+        "This isn’t the end. It’s a beginning. Keep tracking, keep saving first, keep giving, "
+        "and keep encouraging each other. Small, steady steps change lives.",
+    ], title="Look How Far You’ve Come")
+    d.label("With your buddy for the months ahead (7 minutes)")
+    d.p("Turn to the **Keeping It Going** sheet. Check the habits you’ll keep, and agree on a "
+        "day each month when you’ll talk.")
+    d.label("In the weeks ahead, I will:", before=6)
+    d.numbered([
+        "Save something every week, even $1, and write it on the **Weekly Safety Net Tracker**.",
+        "Use my safety net only for real emergencies, and refill it when I use it.",
+        "If something knocks me off course, call my buddy and restart smaller.",
+        "Make a new budget each month, and keep up with my debt plan.",
+        "Look into one other safety net, like health coverage or renter’s insurance.",
+        "Talk with my buddy once a month, using the **Monthly Check-In**.",
+    ])
+    d.p("**Want to go further?** Try the take-home **Looking Back, Looking Ahead**.")
     d.label("Gratitude and giving")
-    d.p("Think of someone who has been part of your safety net. This week, thank them, or find "
-        "a small way to be part of someone else’s.")
+    d.p("Think of someone who has been part of your safety net, and thank them this week. "
+        "Then think of one way to share what you’ve learned with someone else.")
     d.label("Closing circle")
-    d.p("Finish this sentence: “When I have $100 set aside, I’ll feel …”")
-    d.p("**Next week (optional session):** We’ll look at small, steady ways to build a secure "
-        "future.")
+    d.p("Think back to your “money in one word” from Session 1. Share the word you’d choose "
+        "now, and one thing you’re grateful for from our time together.")
 
     # Notes ---------------------------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Notes", odd=False)
     d.h1("Session 4 Notes")
     d.note("Space for your thoughts during our discussions.")
     for head in ["Surprises I can plan for", "My safety net plan",
-                 "Other safety nets I want to look into", "Things I want to remember"]:
+                 "Other safety nets I want to look into", "Looking back, and what comes next"]:
         d.label(head, before=8)
         d.lines(4)
 
@@ -215,8 +248,9 @@ def guide():
     # Homework: weekly tracker -------------------------------------------
     d.new_page_section(margins=0.6, footer=FOOT + " · Weekly Safety Net Tracker")
     d.h1("Weekly Safety Net Tracker")
-    d.note("Session 4 · Homework. Write down every amount you add to (or take from) your safety "
-           "net, and keep using your budget and debt plan. Bring this to Session 5.")
+    d.note("Session 4 · For the weeks ahead. Write down every amount you add to (or take from) "
+           "your safety net, and keep using your budget and debt plan. Need more weeks? Use a "
+           "fresh copy or a notebook. The back is your plan for the months after the course.")
     d.p("Week starting: ______________     My buddy this week: ________________________     "
         "Phone: ________________", size=10, after=2)
     d.p("Check in with your buddy at least once this week. Date we talked: ____________", size=10,
@@ -237,6 +271,38 @@ def guide():
     d.question(1, "What helped me save this week?", 2, size=10)
     d.question(2, "What will I try next week?", 1, size=10)
     d.question(3, "What am I proud of this week?", 1, size=10)
+    d.page_break()
+    d.h2("Keeping It Going")
+    d.note("The back of your tracker. Keep it with your plans, and talk with your buddy once a "
+           "month for the next three months.")
+    d.label("The habits I’ll keep (check all that apply)", before=2)
+    d.checks([
+        "Write down what I spend, at least for a few days each month",
+        "Make a budget before each month begins, on a fresh copy of **My Real Life Budget**",
+        "Save something first, and put a little extra toward one debt at a time",
+        "Use my safety net only for real emergencies, and refill it",
+        "Give some time, talents, or money to others",
+    ], size=10, after=1)
+    d.p("My buddy: ______________________________   Phone: ____________________   We’ll talk "
+        "on the ______ of each month.", size=10, before=6, after=4)
+    d.label("Monthly Check-In", before=2)
+    d.grid(["", "Month 1", "Month 2", "Month 3"], [
+        ["Date we talked", "", "", ""],
+        ["Did I use my budget?", "☐ Yes ☐ Some ☐ No", "☐ Yes ☐ Some ☐ No", "☐ Yes ☐ Some ☐ No"],
+        ["Safety net now", "$", "$", "$"],
+        ["What I owe now", "$", "$", "$"],
+        ["One thing that went well", "", "", ""],
+        ["One thing that was hard", "", "", ""],
+        ["How I gave or helped someone", "", "", ""],
+        ["My goal for next month", "", "", ""],
+    ], [2.2, 1.7, 1.7, 1.7], height=0.42)
+    d.label("Questions to ask each other", before=6)
+    d.bullets([
+        "What are you proud of this month?",
+        "What’s getting in the way, and what could help?",
+        "Did anything knock you off course? What’s your restart step?",
+        "How can I encourage you before we talk next?",
+    ], size=10, after=1)
 
     d.save(OUT)
 

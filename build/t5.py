@@ -59,35 +59,39 @@ def build():
         ["", "", "☐", "☐", "$"],
         ["", "", "☐", "☐", "$"],
     ], [2.4, 1.5, 0.65, 0.65, 2.1], height=0.4, size=10)
-    d.label("Questions to ask at work (or a family member’s work)", before=8)
-    d.checks([
-        "Is there a retirement plan? Can I join now?",
-        "Does the company match what I put in? Up to how much?",
-        "What’s the simplest low-fee choice, like a target-date fund?",
-        "Can I start with a small amount, like 1% or 2% of my pay?",
-    ], size=10, after=1)
-    d.label("Before I sign anything, I’ll ask myself", before=6)
-    d.checks([
-        "Can I explain this in my own words?",
-        "Is anyone pressuring me to decide now, or promising big, sure returns?",
-        "Have I talked with someone I trust?",
-    ], size=10, after=1)
+    d.question(1, "Which of my goals are far enough away to invest for?", 2, size=10)
 
-    d.new_page_section(margins=0.6, footer=FOOT + " · Looking Back, Looking Ahead")
-    d.h1("Looking Back, Looking Ahead")
-    d.note("Session 5 · Take-home, optional. Take a few quiet minutes to see how far you’ve come.")
-    d.grid(["", "When I started", "Now"], [
-        ["One word for how I feel about money", "", ""],
-        ["How sure I feel about money (1–10)", "", ""],
-        ["My biggest money worry", "", ""],
-    ], [3.1, 2.1, 2.1], height=0.45, size=10)
-    d.question(1, "The most important thing I learned:", 2)
-    d.question(2, "The biggest change I’ve made:", 2)
-    d.question(3, "What I’m most proud of:", 2)
-    d.question(4, "One year from now, I hope to:", 2)
-    d.question(5, "The habit I most want to keep:", 1)
-    d.question(6, "One way I’ll help someone else with what I’ve learned:", 2)
-    d.p("Signed: ______________________________     Date: ______________", size=10, before=8)
+    d.new_page_section(margins=0.6, footer=FOOT + " · What Fees Cost")
+    d.h1("What Fees Cost")
+    d.note("Session 5 · Take-home, optional. Every fund charges a yearly fee, called the "
+           "**expense ratio**. It’s listed in the fund’s information or in your plan’s list of "
+           "funds. Small differences add up over many years.")
+    d.label("1. What a yearly fee costs", before=4)
+    d.grid(["Yearly fee", "On $1,000", "On $10,000"], [
+        ["0.05% (many index funds)", "50¢ a year", "$5 a year"],
+        ["0.5%", "$5 a year", "$50 a year"],
+        ["1%", "$10 a year", "$100 a year"],
+        ["2%", "$20 a year", "$200 a year"],
+    ], [3.1, 2.1, 2.1], height=0.3, size=10)
+    d.label("2. What fees do over 30 years", before=8)
+    d.p("$50 a month for 30 years, growing about 7% a year before fees. You put in $18,000.",
+        size=10, after=2)
+    d.grid(["Yearly fee", "It could grow to about", "Lost to fees"], [
+        ["0.05%", "$60,400", "about $600"],
+        ["1%", "$50,200", "about $10,800"],
+        ["2%", "$41,600", "about $19,400"],
+    ], [3.1, 2.1, 2.1], height=0.3, size=10)
+    d.p("Real growth goes up and down, and isn’t guaranteed. But the fee comes out every year, "
+        "good or bad.", size=9, italic=True, after=8)
+    d.label("3. My numbers")
+    d.p("A fund I’m looking at: ______________________________   Its yearly fee: ______%",
+        size=10, after=4)
+    d.p("On $1,000, that’s $________ a year. (Fee × 10. For example, 0.5% × 10 = $5.)",
+        size=10, after=4)
+    d.p("A lower-fee choice in the same plan, if there is one: ______________________   Fee: "
+        "______%", size=10, after=6)
+    d.question(1, "What surprised me about fees?", 2, size=10)
+    d.question(2, "Who could help me find the fees in my plan?", 1, size=10)
     d.save(OUT)
 
 

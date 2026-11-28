@@ -37,7 +37,8 @@ def build():
         "principle and a first step. People can finish it at home, but read the principle aloud before moving on.",
         "Bring the **local resource list** again, plus spare copies of the Session 1 tracker for "
         "anyone who didn’t bring theirs.",
-        "Bring guides, pens, calculators (phones work too), and a flipchart or whiteboard.",
+        "Bring guides, pencils, blank paper, calculators (phones work too), and a flipchart or "
+        "whiteboard.",
         "Think of a time a budget didn’t work for you, and what you learned. A short, honest "
         "story helps people feel normal.",
     ], size=S, after=1)

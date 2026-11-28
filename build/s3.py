@@ -26,13 +26,9 @@ def guide():
     # 1 -------------------------------------------------------------------
     d.h2("1. Opening Inspiration", 5)
     d.read_aloud([
-        "“Interest never sleeps nor sickens nor dies; it never goes to the hospital; it works "
-        "on Sundays and holidays; it never takes a vacation. … Once in debt, interest is your "
-        "companion every minute of the day and night; …” (J. Reuben Clark Jr., quoted by Joseph B. "
-        "Wirthlin, “Earthly Debts, Heavenly Debts,” April 2004 general conference)",
-        "“When we make purchases on credit, they give us only an illusion of prosperity. We think "
-        "we own things, but the reality is, our things own us.” (Joseph B. Wirthlin, same talk)",
+        "“Little strokes fell great oaks.” (Benjamin Franklin, *The Way to Wealth*, 1758)",
     ])
+    d.p("A big debt comes down the way a big tree does: one small, steady stroke at a time.")
     d.discuss(["What would it feel like to have one less payment each month?"])
 
     # 2 -------------------------------------------------------------------
@@ -198,10 +194,10 @@ def guide():
     d.page_break()
     d.h2("Seeing the Finish Line")
     d.note("The back of your debt plan. If time runs short in class, finish this at home.")
-    d.p("A rough way to see when a debt will be paid off: divide the balance by what you pay "
-        "each month. Interest adds time. If the interest rate is high (18% or more) and your "
-        "answer is more than 12 months, add about half: $1,200 at 24%, paid $50 a month, is 24 "
-        "months by dividing but almost 3 years with interest. Even so, there is an end.",
+    d.p("**How long will it take?** Divide what you owe by what you pay each month: $1,200 ÷ "
+        "$50 = 24 months. Interest makes it take longer. At 24% interest, that debt takes about "
+        "34 months, almost 3 years. So your answer is the shortest time it could take. Paying "
+        "a little more each month brings the end sooner, and there is an end.",
         size=10, after=4)
     d.box([
         "**Example (the snowball, from the guide):** The store card is $300. Pay the $25 minimum "

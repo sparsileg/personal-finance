@@ -94,6 +94,22 @@ def build():
         size=10, after=4)
     d.p("What I’ll do (call, visit, ask at work): _____________________   By when: __________",
         size=10)
+
+    d.new_page_section(margins=0.6, footer=FOOT + " · Looking Back, Looking Ahead")
+    d.h1("Looking Back, Looking Ahead")
+    d.note("Session 4 · Take-home, optional. Take a few quiet minutes to see how far you’ve come.")
+    d.grid(["", "When I started", "Now"], [
+        ["One word for how I feel about money", "", ""],
+        ["How sure I feel about money (1–10)", "", ""],
+        ["My biggest money worry", "", ""],
+    ], [3.1, 2.1, 2.1], height=0.45, size=10)
+    d.question(1, "The most important thing I learned:", 2)
+    d.question(2, "The biggest change I’ve made:", 2)
+    d.question(3, "What I’m most proud of:", 2)
+    d.question(4, "One year from now, I hope to:", 2)
+    d.question(5, "The habit I most want to keep:", 1)
+    d.question(6, "One way I’ll help someone else with what I’ve learned:", 2)
+    d.p("Signed: ______________________________     Date: ______________", size=10, before=8)
     d.save(OUT)
 
 
