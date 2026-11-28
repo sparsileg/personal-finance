@@ -23,7 +23,7 @@ SESSIONS = [
       "What a Budget Really Is (15)", "Build Your Real Life Budget (25)",
       "Needs, Wants, and What Matters (12)", "Wrap-up and This Week’s Commitment (8)"],
      "My Real Life Budget (front and back)", "Weekly Budget Tracker",
-     "Needs, Wants, or It Depends?; My Budget Success Plan; Budget Problem-Solving"),
+     "Which Paycheck Pays What; My Budget Success Plan; Budget Problem-Solving"),
     ("3", "Breaking the Debt Cycle", "A plan to pay down what you owe, and stay out of new debt",
      "Participants see what interest really costs, list everything they owe, and choose a "
      "payoff order (snowball or avalanche). They learn which bills to protect first, their "

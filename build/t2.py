@@ -7,34 +7,32 @@ FOOT = "Session 2 · Take-Home Worksheets (optional)"
 
 
 def build():
-    d = Doc("template.docx", margins=0.6, footer=FOOT + " · Needs and Wants")
-    d.h1("Needs, Wants, or It Depends?")
+    d = Doc("template.docx", margins=0.6, footer=FOOT + " · Which Paycheck Pays What")
+    d.h1("Which Paycheck Pays What")
     d.note("Session 2 · Take-home, optional. These worksheets go deeper into what we talked about "
            "in class. Do them only if you have time after your tracker, which comes first.")
-    d.p("For each item, check whether it’s a need, a want, or depends on the situation. "
-        "There are no wrong answers. Your life is different from everyone else’s.", size=11)
-    items = [
-        "Rent or mortgage",
-        "Groceries",
-        "Car payment (when you need a car for work)",
-        "A streaming service",
-        "Coffee from a coffee shop every day",
-        "New work clothes (the old ones are worn out)",
-        "New work clothes (the old ones are fine)",
-        "Eating lunch out every day",
-        "Internet service",
-        "Cell phone",
-        "Life insurance",
-        "Birthday gifts for family",
-        "Brand-name groceries instead of store brand",
-        "A haircut every six weeks",
-    ]
-    d.grid(["Item", "Need", "Want", "Depends"], [[it, "☐", "☐", "☐"] for it in items],
-           [4.6, 0.9, 0.9, 0.9], height=0.28, size=10)
-    d.question(1, "What did I notice about my answers?", 2, size=10)
-    d.question(2, "Which wants matter enough to me to keep in my budget?", 2, size=10)
-    d.question(3, "Which needs could I meet for less money, or with help from a community resource?",
-               2, size=10)
+    d.p("Bills come due on certain days. For each paycheck, list the bills due before the next "
+        "one, so nothing is late. Put housing, utilities, food, and getting to work first.",
+        size=11)
+    rows, merged, shade = [], {}, []
+    for n in range(1, 5):
+        merged[len(rows)] = (f"Paycheck {n}     Date: ____________     "
+                             "Amount: $__________")
+        shade.append(len(rows))
+        rows.append([""] * 3)
+        for _ in range(3):
+            rows.append(["", "", "$"])
+        merged[len(rows)] = "Left after these bills: $__________"
+        rows.append([""] * 3)
+    d.grid(["Bill", "Due date", "Amount"], rows, [4.3, 1.5, 1.5], height=0.27, size=10,
+           merged_rows=merged, bold_rows=tuple(shade), shade_rows=tuple(shade))
+    d.box([
+        "**Tips.** Many companies will move a due date if you ask, so bills line up with your "
+        "paychecks. Paid every two weeks? Two months a year have a third paycheck. Give it a job "
+        "before it comes.",
+    ])
+    d.question(1, "Which paycheck is the tightest? What could I move to a different one?", 1,
+               size=10)
 
     d.new_page_section(margins=0.6, footer=FOOT + " · Budget Success Plan")
     d.h1("My Budget Success Plan")

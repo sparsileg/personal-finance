@@ -45,6 +45,9 @@ def guide():
         "What could “a reserve, even though it be small” mean for you and your family?",
     ])
     d.p("This course helps each of us build that reserve, one small step at a time.")
+    d.p("**The road ahead:** first a budget that fits your life (Session 2), then a plan for "
+        "debt (Session 3), then a small safety net (Session 4), and then saving for later "
+        "(Session 5). Each step makes the next one possible.")
 
     # 2 -------------------------------------------------------------------
     d.h2("2. Welcome and Getting Started", 15)
@@ -167,7 +170,8 @@ def guide():
     d.new_page_section(margins=0.6, footer=FOOT + " · My Financial Snapshot")
     d.h1("My Financial Snapshot")
     d.note("Session 1 · In class. Use a typical month. Best guesses are fine. Leave blank "
-           "anything that doesn’t apply. This page is private.")
+           "anything that doesn’t apply. Small purchases are easy to forget; your tracker this "
+           "week will fill them in. This page is private.")
     d.money_table("Money coming in (each month)", INCOME, "Total coming in",
                   widths=(2.75, 0.9), cols=2)
     d.p("**Not paid monthly?** Paid every week: one paycheck × 4.33. Paid every two weeks: one paycheck × 2.17. Paid twice a month: one paycheck × 2.", size=9, before=2, after=2)

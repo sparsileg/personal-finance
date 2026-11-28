@@ -80,6 +80,9 @@ def guide():
         "Save first, a little at a time, even while you pay off debt. Keep the money where it’s "
         "easy to reach but not too easy to spend: an envelope at home, a separate savings "
         "account, or a credit union. Use it only for real emergencies, then refill it.",
+        "Move the money on payday, before you spend, or set up an automatic transfer if you "
+        "have an account. When extra money comes in, like a refund or extra hours, decide "
+        "ahead of time how much goes to your safety net.",
     ])
     d.h3("On your own", 15, before=2)
     d.p("Turn to the **My Safety Net Plan** worksheet. Use your budget to find your must-pay "

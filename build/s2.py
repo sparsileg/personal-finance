@@ -46,6 +46,8 @@ def guide():
         "How did tracking go? Did you track every day, most days, or some days?",
         "What was the hardest part?",
         "What did you notice about your feelings and your spending?",
+        "Look at your Snapshot from Session 1. Which line was most different from what you "
+        "tracked?",
     ])
     d.p("**Remember:** Perfect tracking isn’t the goal. Noticing is. If you tracked even one "
         "day, you’ve already started to change.")
@@ -68,6 +70,10 @@ def guide():
         "even $5 or the change in your pocket. The habit matters more than the amount. Giving "
         "belongs in a budget too. Many of us give to our church or to people in need, and time "
         "and talents count as giving.",
+        "Extra money needs a job too. Before it comes in, from extra hours, a second job, a tax "
+        "refund, or a gift, decide what it will do: savings, a debt, or one planned want. Money "
+        "without a job tends to disappear. If you work extra hours, count what they cost you, "
+        "like childcare, gas, and food on the go, so you know what you really keep.",
     ], title="Save First, and Make Room to Give")
     d.discuss([
         "What has made budgeting hard for you in the past?",
@@ -80,7 +86,8 @@ def guide():
     d.h3("On your own", 18, before=2)
     d.p("Turn to the **My Real Life Budget** worksheet. Use your tracker, bills, and pay stubs. "
         "If your income changes from month to month, use a low but typical month. Best guesses "
-        "are fine. If you don’t finish, that’s OK. You can finish at home.")
+        "are fine. If you share money with a partner, build it together if you can. If you don’t "
+        "finish, that’s OK. You can finish at home.")
     d.h3("With a new buddy", 7)
     d.p("Pair up with someone who wasn’t your buddy last week, or keep the same buddy if you "
         "prefer. (A group of three is fine.) This is your buddy for the coming week, so trade "
@@ -195,8 +202,9 @@ def guide():
         "**More than zero?** Give those dollars a job: savings or an extra debt payment.",
         "**Zero?** Every dollar has a job. Well done!",
         "**Less than zero?** You’re not alone. Look at Step 3 for small changes, look for "
-        "ways to add income, and use community resources such as food pantries, SNAP, utility "
-        "assistance, or 211. Using help is part of a good plan.",
+        "ways to add income, and use community resources such as food pantries, SNAP, WIC, "
+        "school meals, childcare help, utility assistance, or 211. Free tax help (VITA) can "
+        "check for tax credits for families. Using help is part of a good plan.",
     ], size=10, after=1)
     d.label("Two changes I could make", before=6)
     d.p("1. I could spend $________ less on ____________________ by _______________________________",

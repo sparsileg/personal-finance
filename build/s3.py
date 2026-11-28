@@ -55,7 +55,7 @@ def guide():
     d.h2("3. The True Cost of Debt", 15)
     d.read_aloud([
         "Debt is money you owe. It can be a credit card, a store card, or a car loan. It can be "
-        "a payday loan, a title loan, or a medical bill. It can be “buy now, pay later,” "
+        "a payday loan, a title loan, a student loan, or a medical bill. It can be “buy now, pay later,” "
         "rent-to-own, back rent, or money from family. Having debt doesn’t make you a bad "
         "person. Most of the time, life cost more than you had, and you did what you had to do.",
         "Most debt also has **interest**. Interest is a fee for borrowing. It is added every "
@@ -116,7 +116,9 @@ def guide():
         "payment, a payment plan, or a late fee removed. Many will say yes, especially if you "
         "call before you fall behind. Get any agreement in writing, and never promise a payment "
         "you can’t make. A **nonprofit credit counselor** can also help for free or at low cost. "
-        "Be careful of companies that charge big fees up front to “settle” your debt.",
+        "Be careful of companies that charge big fees up front to “settle” your debt. If "
+        "you have federal student loans, call your loan servicer: there are plans that "
+        "lower the payment to fit your income.",
     ], title="You Have More Power Than You Think")
     d.label("Practice with your buddy")
     d.p("Take turns reading this aloud, as if you were on the phone:")
@@ -136,7 +138,8 @@ def guide():
         "Tracker**.",
         "Put any extra money, even $5, toward my first debt.",
         "Avoid new debt. If I’m tempted, I’ll wait a day or call my buddy first.",
-        "Find any missing balances or interest rates on my statements, or by calling.",
+        "Find any missing balances or interest rates on my statements, or by calling. My free "
+        "credit report at annualcreditreport.com lists the debts in my name.",
         "Keep saving something first, even loose change.",
         "Call or text my buddy at least once.",
     ])
@@ -196,7 +199,9 @@ def guide():
     d.h2("Seeing the Finish Line")
     d.note("The back of your debt plan. If time runs short in class, finish this at home.")
     d.p("A rough way to see when a debt will be paid off: divide the balance by what you pay "
-        "each month. Interest adds a little more time, but you’ll see that there is an end.",
+        "each month. Interest adds time. If the interest rate is high (18% or more) and your "
+        "answer is more than 12 months, add about half: $1,200 at 24%, paid $50 a month, is 24 "
+        "months by dividing but almost 3 years with interest. Even so, there is an end.",
         size=10, after=4)
     d.box([
         "**Example (the snowball, from the guide):** The store card is $300. Pay the $25 minimum "

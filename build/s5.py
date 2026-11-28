@@ -75,11 +75,14 @@ def guide():
         "safe and easy to reach. **Investing** is for money you won’t need for five years or "
         "more, like retirement. It goes up and down, but over many years it usually grows more.",
         "Build your safety net and pay down costly debt first. Then, if your job offers a "
-        "retirement plan with a **match**, put in at least enough to get the full match. It’s "
-        "free money. Without a plan at work, you can open an account of your own, called an IRA, "
+        "retirement plan with a **match**, put in at least enough to get the full match. A match "
+        "means your job adds money when you save, often 50¢ or $1 for each $1 you put in, up "
+        "to a limit. It’s free money. Without a plan at work, you can open a retirement "
+        "account of your own, called an IRA (Individual Retirement Account), "
         "at a bank or credit union. A simple choice is a low-fee **target-date fund**, which "
         "spreads your money across many companies and adjusts as you get older. If your income "
-        "is modest, you may also get a tax credit for saving. Free tax help (VITA) can tell you.",
+        "is modest, you may also get a tax credit for saving. Free tax help (VITA, Volunteer "
+        "Income Tax Assistance) can tell you.",
     ], title="Saving and Investing Made Simple")
     d.read_aloud(
         ["Watch out for scams. Be careful if someone:"],
@@ -176,6 +179,8 @@ def guide():
         "Check in with my buddy each month",
         "Give some time, talents, or money to others",
     ], size=10, after=1)
+    d.p("Each month, make a new budget on a fresh copy of the **My Real Life Budget** "
+        "worksheet from Session 2.", size=10, before=4, after=2)
     d.label("Passing it on", before=6)
     d.p("Someone I’ll share one idea from this course with: ______________________________",
         size=10, after=4)
